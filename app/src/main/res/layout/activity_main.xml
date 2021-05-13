@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/house_price"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Price of the House"
+        android:autofillHints="Price of the House"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/yearly_plan_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your preferred interest rate"
+        app:layout_constraintTop_toBottomOf="@id/house_price"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <RadioGroup
+        android:visibility="visible"
+        android:id="@+id/thirtyYear_interest_rates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/yearly_plan_question"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" >
+
+        <RadioButton
+            android:id="@+id/BOA_interest_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank of America: 2.75% " />
+
+        <RadioButton
+            android:id="@+id/WellsFargo_interest_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wells Fargo: 3.00%" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/calculate_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Payment Plan!"
+        app:layout_constraintTop_toBottomOf="@id/thirtyYear_interest_rates"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/the_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        tools:text="@string/monthly_payment"
+        app:layout_constraintBottom_toTopOf="@id/house_price"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
