@@ -10,33 +10,33 @@
         android:id="@+id/house_price"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:hint="@string/price_of_the_house"
         android:autofillHints="Price of the House"
+        android:hint="@string/price_of_the_house"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/yearly_plan_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/choose_your_preferred_interest_rate"
-        app:layout_constraintTop_toBottomOf="@id/house_price"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/house_price" />
 
 
     <RadioGroup
-        android:visibility="visible"
         android:id="@+id/thirtyYear_interest_rates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/yearly_plan_question"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" >
+        app:layout_constraintTop_toBottomOf="@id/yearly_plan_question">
 
         <RadioButton
             android:id="@+id/BOA_interest_30"
@@ -57,19 +57,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_payment_plan"
-        app:layout_constraintTop_toBottomOf="@id/thirtyYear_interest_rates"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/thirtyYear_interest_rates" />
 
     <TextView
         android:id="@+id/the_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        tools:text="@string/monthly_payment"
         app:layout_constraintBottom_toTopOf="@id/house_price"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:text="@string/monthly_payment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.thePayment.text = formattedPayment.toString()
 
+        //testing how android studio reacts to changes
+
 
 
 
