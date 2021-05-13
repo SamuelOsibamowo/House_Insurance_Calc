@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         }
         interest /= 12
 
-        var payment = price*(((1+interest).pow(360))*interest)
-        var payment2 = ((1+interest).pow(360))-1
-        var final = payment/payment2
+        val payment = price*(((1+interest).pow(360))*interest)
+        val payment2 = ((1+interest).pow(360))-1
+        val final = payment/payment2
 
 
         NumberFormat.getCurrencyInstance()

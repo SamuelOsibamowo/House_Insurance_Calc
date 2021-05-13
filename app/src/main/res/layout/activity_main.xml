@@ -10,7 +10,7 @@
         android:id="@+id/house_price"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:hint="Price of the House"
+        android:hint="@string/price_of_the_house"
         android:autofillHints="Price of the House"
         android:inputType="numberDecimal"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/yearly_plan_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose your preferred interest rate"
+        android:text="@string/choose_your_preferred_interest_rate"
         app:layout_constraintTop_toBottomOf="@id/house_price"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
@@ -42,13 +42,13 @@
             android:id="@+id/BOA_interest_30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bank of America: 2.75% " />
+            android:text="@string/bank_of_america_2_75" />
 
         <RadioButton
             android:id="@+id/WellsFargo_interest_30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wells Fargo: 3.00%" />
+            android:text="@string/wells_fargo_3_00" />
     </RadioGroup>
 
 
@@ -56,7 +56,7 @@
         android:id="@+id/calculate_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Payment Plan!"
+        android:text="@string/get_payment_plan"
         app:layout_constraintTop_toBottomOf="@id/thirtyYear_interest_rates"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>

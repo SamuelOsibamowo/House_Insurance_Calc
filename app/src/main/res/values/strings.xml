@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">House_Insurance_Calc</string>
     <string name="monthly_payment">Monthly Payment</string>
+    <string name="get_payment_plan">Get Payment Plan!</string>
+    <string name="wells_fargo_3_00">Wells Fargo: 3.00%</string>
+    <string name="bank_of_america_2_75">Bank of America: 2.75%</string>
+    <string name="choose_your_preferred_interest_rate">Choose your preferred interest rate</string>
+    <string name="price_of_the_house">Price of the House</string>
 </resources>
